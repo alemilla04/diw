@@ -1,0 +1,65 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f8cfcf;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+/* input[type="radio"] {
+    accent-color: red; cambia el color de un radio y checkbox
+} */
+
+.switch {
+    border: solid 5px black;
+    border-radius: 0.5rem;
+    width: 2rem;
+    height: 1rem;
+    appearance: none;
+    position: relative;
+    font-size: 1rem;
+    transition-property: left border-color;
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+}
+
+/* .switch:nth-child(4) {
+    left: 50px;
+    top: 50px;
+} */
+
+.switch::before {
+    content: ""; /*texto que queremos que aparezca en el before*/
+    position: absolute; 
+    background-image: url(https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-1200x675.jpg);
+    background-size: cover;
+    background-color: red;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.15em;
+    transition-property: left background-color;
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+}
+
+.switch:checked::before {
+    background-color: green;
+    left: 1.10em;
+}
+
+.switch:checked {
+    border-color: green;
+}
+

@@ -1,0 +1,66 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border: solid 2px black;
+    text-align: center;
+}
+
+td {
+    border-collapse: collapse;
+    border: solid 2px black;
+    text-align: center;
+    padding: 5px;
+}
+
+tr {
+    border-collapse: collapse;
+    border: solid 2px black;
+    text-align: center;
+}
+
+th{
+    border-collapse: collapse;
+    border: solid 2px black;
+    text-align: center;
+    width: 15%;
+    padding: 3px;
+}
+
+thead { 
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.vacio { 
+    width: 15%;
+}
+
+.hora {
+    background-color: blue;
+    color: white;
+}
+
+.recreo {
+    background-color: black;
+}
+
+.desp {
+    background-color: rgb(194, 211, 241);
+}
+
+.dwec {
+    background-color: rgb(238, 195, 77);
+}
+
+.diw {
+    background-color: rgb(182, 219, 180);
+}
+
+.libre {
+    font-weight: lighter;
+}

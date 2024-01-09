@@ -1,0 +1,100 @@
+:root {
+    font-size: 20px;
+    font-family: serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url("./images/the-earth.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+main {
+    flex-grow: 1;
+    display: grid;
+    /* grid-template-columns: 2fr 2fr 1fr 2fr; */
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "polu    polu     polu   polu"
+    "tierra  perro    perro  basura"
+    "tierra  sucio    fuego  fuego"
+    "hombre  fabricas agua   agua"
+    "hombre  forest   agua   agua"
+    ;
+    gap: 0.5rem;
+    padding: 5px;
+}
+
+header {
+    grid-area: polu;
+    background-color: black;
+    color: white;
+    mix-blend-mode: multiply;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.imagen1 {
+    grid-area: tierra;
+    background-image: url("./images/01.jpg");
+}
+
+.imagen2 {
+    grid-area: perro;
+    background-image: url("./images/02.jpg");
+}
+
+.imagen3 {
+    grid-area: basura;
+    background-image: url("./images/03.jpg");
+}
+
+.imagen4 {
+    grid-area: sucio;
+    background-image: url("./images/04.jpg");
+}
+
+.imagen5 {
+    grid-area: fuego;
+    background-image: url("./images/05.jpg");
+}
+
+.imagen6 {
+    grid-area: hombre;
+    background-image: url("./images/06.jpg");
+}
+
+.imagen7 {
+    grid-area: fabricas;
+    background-image: url("./images/07.jpg");
+}
+
+.imagen8 {
+    grid-area: agua;
+    background-image: url("./images/08.jpg");
+}
+
+.imagen9 {
+    grid-area: forest;
+    background-image: url("./images/09.jpg");
+}
+
+.imagen {
+    background-repeat: no-repeat;
+    border-radius: 2%;
+    border: solid 1px coral;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,46 @@
+:root {
+    font-size: 40px;
+}
+
+body {
+    background-color: aqua;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: darkgreen;
+    border-color: gold;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+a:visited {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+a:hover {
+    font-weight: bold;
+    background-color: brown;
+}
+
+a:active {
+    font-size: 3rem;
+}
+
+a:focus {
+    font-size: 3rem;
+    color: orange;
+    outline: none;
+}

@@ -1,0 +1,44 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: bisque;
+}
+
+dialog.spinner{
+    margin: auto;
+    border: solid 10px transparent;
+    border-top: solid 10px red;
+    border-bottom: solid 10px green;
+    border-radius: 50%;
+    animation: change-dimensions 1s linear 0s infinite alternate both;
+    position: relative;
+}
+
+dialog.spinner::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+dialog.spinner:focus {
+    outline: none;
+}
+
+@keyframes change-dimensions {
+    from{
+        width: 100px;
+        height: 100px;
+    }
+    to{
+        height: 50px;
+        width: 50px;
+    }
+}

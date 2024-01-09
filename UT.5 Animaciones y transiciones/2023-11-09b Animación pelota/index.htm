@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script type="module">
+        document.addEventListener("DOMContentLoaded", _ => {
+            const nButton = document.querySelector('.button');
+            nButton.addEventListener('click', e => {
+                const nBall = document.querySelector('.ball');
+                if(nBall.style.animationPlayState === 'paused'){
+                    nBall.style.animationPlayState = 'running';
+                }
+                else {
+                    nBall.style.animationPlayState = 'paused';
+                }
+            });
+
+            
+        })
+    </script>
+</head>
+<body>
+    <div class="ball"></div>
+    <div class="button"></div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+:root {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+article {
+    border: solid 3px black
+}
+
+header {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "available  available  cloud      cloud"
+    "available  available  sephiroth  sephiroth"
+    "tifa       tifa       only       barret"
+    "square     aerith     aerith     barret"
+    ;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.available {
+    grid-area: available;
+    background-color: #1A231E;
+    color: white;
+    display: grid;
+    place-content: center;
+}
+
+.cloud {
+    grid-area: cloud;
+    background-color: #C8D1D0;
+}
+
+.cloud-img {
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+.sephiroth {
+    grid-area: sephiroth;
+    background-color: #293535;
+    color: white;
+} 
+
+.tifa {
+    grid-area: tifa;
+    background-color: #5F707A;
+}
+
+.only {
+    grid-area: only;
+}
+
+.barret {
+    grid-area: barret;
+    background-color: #777D73;
+}
+
+.square {
+    grid-area: square;
+}
+
+.aerith {
+    grid-area: aerith;
+    background-color: #45282A;
+    color: white;
+}
+
+img {
+    height: 300px;
+}

@@ -1,0 +1,75 @@
+:root {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 3fr 1fr 1fr 1fr 3fr;
+    grid-template-areas: 
+    "rojo      rojo      azul      azul"
+    "amarillo  amarillo  amarillo  amarillo"
+    "gris      gris      verde     marron"
+    "naranja   naranja   verde     marron"
+    "naranja   naranja   negro     oliva"
+    "celeste   celeste   celeste   celeste"
+    ;
+}
+
+.red {
+    grid-area: rojo;
+    background-color: red;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+}
+
+.yellow {
+    grid-area: amarillo;
+    background-color: yellow;
+}
+
+.gray {
+    grid-area: gris;
+    background-color: gray;
+}
+
+.orange {
+    grid-area: naranja;
+    background-color: orange;
+}
+
+.green {
+    grid-area: verde;
+    background-color: green;
+}
+
+.darkred {
+    grid-area: marron;
+    background-color: darkred;
+}
+
+.black {
+    grid-area: negro;
+    background-color: black;
+}
+
+.olive {
+    grid-area: oliva;
+    background-color: olive;
+}
+
+.cyan {
+    grid-area: celeste;
+    background-color: cyan;
+}
